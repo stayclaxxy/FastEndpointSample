@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsSample.Api", "FastEndpointsSample.Api\FastEndpointsSample.Api.csproj", "{77CA500F-6DA6-462B-8777-213B9DB32ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsSample.ApplicationCore", "FastEndpointsSample.ApplicationCore\FastEndpointsSample.ApplicationCore.csproj", "{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsSample.Infrastructure", "FastEndpointsSample.Infrastructure\FastEndpointsSample.Infrastructure.csproj", "{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77CA500F-6DA6-462B-8777-213B9DB32ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CA500F-6DA6-462B-8777-213B9DB32ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CA500F-6DA6-462B-8777-213B9DB32ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CA500F-6DA6-462B-8777-213B9DB32ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
