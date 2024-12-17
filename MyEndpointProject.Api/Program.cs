@@ -12,11 +12,9 @@ bld.Services.AddDbContext<AdventureWorksContext>(options =>
 });
 
 bld.Services.AddScoped<IEmployeeService, EmployeeService>();
-bld.Services.AddFastEndpoints();
-bld.Services.AddSwaggerDocument();
+bld.Services.AddFastEndpoints().SwaggerDocument();
 
 var app = bld.Build();
 
-app.UseFastEndpoints();
-app.UseSwaggerGen();
+app.UseFastEndpoints().UseSwaggerGen();
 app.Run();
