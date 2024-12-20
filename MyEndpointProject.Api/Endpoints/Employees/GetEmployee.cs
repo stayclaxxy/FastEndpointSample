@@ -17,12 +17,12 @@ public class GetEmployee(IEmployeeService employeeService) : EndpointWithoutRequ
     {
         var id = Route<int>("id");
         
-        var response = Map.FromEntity(await employeeService.GetEmployee(id));
-        if (response is null)
+        var employee = await employeeService.GetEmployee(id);
+        if (employee is null)
         {
             await SendNotFoundAsync(ct);
             return;
         }
-        await SendOkAsync(response, ct);
+        await SendOkAsync(Map.FromEntity(employee)!, ct);
     }
 }
