@@ -23,5 +23,5 @@ var app = bld.Build();
 app.UseFastEndpoints(o =>
 {
     o.Endpoints.RoutePrefix = "api";
-}).UseSwaggerGen();
+}).UseSwaggerGen(uiConfig: c => c.DocExpansion = "list");
 app.Run();

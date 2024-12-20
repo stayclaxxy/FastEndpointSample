@@ -23,6 +23,6 @@ public class GetEmployee(IEmployeeService employeeService) : EndpointWithoutRequ
             await SendNotFoundAsync(ct);
             return;
         }
-        await SendOkAsync(Map.FromEntity(employee)!, ct);
+        await SendMappedAsync(employee, 200, ct);
     }
 }

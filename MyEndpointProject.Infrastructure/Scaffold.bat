@@ -1,14 +1,27 @@
 dotnet ef dbcontext scaffold "Server=192.168.50.166;Database=AdventureWorks;User ID=sa;Password=Password323!;Encrypt=False" ^
 Microsoft.EntityFrameworkCore.SqlServer ^
---output-dir ..\FastEndpoints.Infrastructure\Entities ^
+--output-dir ..\MyEndpointProject.Infrastructure\Entities ^
 --context AdventureWorksContext ^
 --context-dir .\Data ^
---context-namespace FastEndpoints.Infrastructure.Data ^
---namespace FastEndpoints.Infrastructure.Entities ^
+--context-namespace MyEndpointProject.Infrastructure.Data ^
+--namespace MyEndpointProject.Infrastructure.Entities ^
 --force ^
 --no-onconfiguring ^
 --startup-project ..\MyEndpointProject.Api ^
 -t HumanResources.Employee ^
 -t HumanResources.EmployeeDepartmentHistory ^
 -t HumanResources.EmployeePayHistory ^
--t Sales.*
+-t HumanResources.Department ^
+-t HumanResources.Shift ^
+-t Person.Person ^
+-t Person.Address ^
+-t Person.AddressType ^
+-t Person.ContactType ^
+-t Person.CountryRegion ^
+-t Person.PersonPhone ^
+-t Person.PhoneNumberType ^
+-t Person.EmailAddress ^
+-t Person.BusinessEntity ^
+-t Person.BusinessEntityAddress ^
+-t Person.BusinessEntityContact ^
+-t Person.StateProvince ^

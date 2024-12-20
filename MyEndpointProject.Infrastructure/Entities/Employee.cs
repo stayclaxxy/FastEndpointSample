@@ -83,6 +83,8 @@ public partial class Employee
     /// </summary>
     public DateTime ModifiedDate { get; set; }
 
+    public virtual Person BusinessEntity { get; set; } = null!;
+
     public virtual ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; } = new List<EmployeeDepartmentHistory>();
 
     public virtual ICollection<EmployeePayHistory> EmployeePayHistories { get; set; } = new List<EmployeePayHistory>();
