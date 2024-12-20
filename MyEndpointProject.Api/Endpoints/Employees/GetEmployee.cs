@@ -1,15 +1,15 @@
 ﻿using FastEndpoints;
-using FastEndpointsSample.ApplicationCore.Services;
-using FastEndpointsSample.ApplicationCore.Mappers;
-using FastEndpointsSample.ApplicationCore.Models.Response;
+using MyEndpointProject.ApplicationCore.Services;
+using MyEndpointProject.ApplicationCore.Mappers;
+using MyEndpointProject.ApplicationCore.Models.Response;
 
-namespace MyEndpointProject.Endpoints;
+namespace MyEndpointProject.Endpoints.Employees;
 
-public class EmployeeEndpoint(IEmployeeService employeeService) : EndpointWithoutRequest<GetEmployeeResponse, EmployeeMapper>
+public class GetEmployee(IEmployeeService employeeService) : EndpointWithoutRequest<GetEmployeeResponse, EmployeeMapper>
 {
     public override void Configure()
     {
-        Get("/api/Employees/{id}");
+        Get("/employee/{id}");
         AllowAnonymous();
     }
 
@@ -23,6 +23,6 @@ public class EmployeeEndpoint(IEmployeeService employeeService) : EndpointWithou
             await SendNotFoundAsync(ct);
             return;
         }
-        await SendAsync(response);
+        await SendOkAsync(response, ct);
     }
-}  
+}

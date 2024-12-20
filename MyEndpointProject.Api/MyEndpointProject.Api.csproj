@@ -11,6 +11,7 @@
     <ItemGroup>
       <PackageReference Include="FastEndpoints" Version="5.32.0" />
       <PackageReference Include="FastEndpoints.Swagger" Version="5.32.0" />
+      <PackageReference Include="MediatR" Version="12.4.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,8 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FastEndpointsSample.ApplicationCore\FastEndpointsSample.ApplicationCore.csproj" />
-      <ProjectReference Include="..\FastEndpointsSample.Infrastructure\FastEndpointsSample.Infrastructure.csproj" />
+      <ProjectReference Include="..\MyEndpointProject.ApplicationCore\MyEndpointProject.ApplicationCore.csproj" />
+      <ProjectReference Include="..\MyEndpointProject.Infrastructure\MyEndpointProject.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

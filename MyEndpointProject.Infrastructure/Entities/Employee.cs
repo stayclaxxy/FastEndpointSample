@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FastEndpointsSample.Infrastructure.Entities;
+namespace MyEndpointProject.Infrastructure.Entities;
 
 /// <summary>
 /// Employee information such as salary, department, and title.

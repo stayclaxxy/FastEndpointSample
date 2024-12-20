@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using FastEndpointsSample.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
+using MyEndpointProject.Infrastructure.Entities;
 
-namespace FastEndpointsSample.Infrastructure.Data;
+namespace MyEndpointProject.Infrastructure.Data;
 
 public partial class AdventureWorksContext : DbContext
 {

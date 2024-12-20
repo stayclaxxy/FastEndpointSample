@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEndpointProject.Api", "MyEndpointProject.Api\MyEndpointProject.Api.csproj", "{77CA500F-6DA6-462B-8777-213B9DB32ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsSample.ApplicationCore", "FastEndpointsSample.ApplicationCore\FastEndpointsSample.ApplicationCore.csproj", "{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEndpointProject.ApplicationCore", "MyEndpointProject.ApplicationCore\MyEndpointProject.ApplicationCore.csproj", "{592FC6DA-3DD3-454E-AC2A-5A22B98A4DFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpointsSample.Infrastructure", "FastEndpointsSample.Infrastructure\FastEndpointsSample.Infrastructure.csproj", "{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEndpointProject.Infrastructure", "MyEndpointProject.Infrastructure\MyEndpointProject.Infrastructure.csproj", "{00F15C5B-2A27-4F71-9C42-7941D20AA7D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

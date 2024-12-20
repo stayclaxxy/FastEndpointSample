@@ -1,4 +1,4 @@
-dotnet ef dbcontext scaffold "Server=redacted" ^
+dotnet ef dbcontext scaffold "Server=192.168.50.166;Database=AdventureWorks;User ID=sa;Password=Password323!;Encrypt=False" ^
 Microsoft.EntityFrameworkCore.SqlServer ^
 --output-dir ..\FastEndpoints.Infrastructure\Entities ^
 --context AdventureWorksContext ^
@@ -7,7 +7,7 @@ Microsoft.EntityFrameworkCore.SqlServer ^
 --namespace FastEndpoints.Infrastructure.Entities ^
 --force ^
 --no-onconfiguring ^
---startup-project ..\FastEndpoints.Api ^
+--startup-project ..\MyEndpointProject.Api ^
 -t HumanResources.Employee ^
 -t HumanResources.EmployeeDepartmentHistory ^
 -t HumanResources.EmployeePayHistory ^

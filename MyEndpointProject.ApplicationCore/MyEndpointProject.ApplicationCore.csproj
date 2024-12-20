@@ -7,16 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Models\Request\" />
-      <Folder Include="Validators\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\FastEndpointsSample.Infrastructure\FastEndpointsSample.Infrastructure.csproj" />
+      <ProjectReference Include="..\MyEndpointProject.Infrastructure\MyEndpointProject.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="FastEndpoints" Version="5.32.0" />
+      <PackageReference Include="MediatR" Version="12.4.1" />
     </ItemGroup>
 
 </Project>

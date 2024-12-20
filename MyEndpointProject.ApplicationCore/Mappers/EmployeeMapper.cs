@@ -1,8 +1,8 @@
 ﻿using FastEndpoints;
-using FastEndpointsSample.ApplicationCore.Models.Response;
-using FastEndpointsSample.Infrastructure.Entities;
+using MyEndpointProject.ApplicationCore.Models.Response;
+using MyEndpointProject.Infrastructure.Entities;
 
-namespace FastEndpointsSample.ApplicationCore.Mappers;
+namespace MyEndpointProject.ApplicationCore.Mappers;
 
 public class EmployeeMapper : ResponseMapper<GetEmployeeResponse, Employee>
 {

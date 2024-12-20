@@ -1,6 +1,6 @@
-using FastEndpointsSample.ApplicationCore.Services;
+using MyEndpointProject.ApplicationCore.Services;
 using FastEndpoints;
-using FastEndpointsSample.Infrastructure.Data;
+using MyEndpointProject.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using FastEndpoints.Swagger;
 
@@ -12,9 +12,16 @@ bld.Services.AddDbContext<AdventureWorksContext>(options =>
 });
 
 bld.Services.AddScoped<IEmployeeService, EmployeeService>();
-bld.Services.AddFastEndpoints().SwaggerDocument();
+bld.Services.AddFastEndpoints()
+    .SwaggerDocument(o =>
+    {
+        o.EnableJWTBearerAuth = false;
+    });
 
 var app = bld.Build();
 
-app.UseFastEndpoints().UseSwaggerGen();
+app.UseFastEndpoints(o =>
+{
+    o.Endpoints.RoutePrefix = "api";
+}).UseSwaggerGen();
 app.Run();

@@ -1,4 +1,4 @@
-﻿namespace FastEndpointsSample.ApplicationCore.Models.Response;
+﻿namespace MyEndpointProject.ApplicationCore.Models.Response;
 
 public class GetEmployeeResponse
 {
