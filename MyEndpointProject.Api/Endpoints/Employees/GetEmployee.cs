@@ -9,7 +9,7 @@ public class GetEmployee(IEmployeeService employeeService) : EndpointWithoutRequ
 {
     public override void Configure()
     {
-        Get("/employee/{id}");
+        Get("/employees/{id}");
         AllowAnonymous();
     }
 
